@@ -447,7 +447,9 @@ img{
     left: 0;
     width: 100%;
 }
-
+.header_active{
+    background-color: #0E1D28;
+}
 .header__wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -677,15 +679,14 @@ img{
 }
 .sites__card-pic{
     width: 100%;
-    transition: .15s;
+    object-fit: cover;
+    transition: .15s all;
 }
 .sites__card-pic-size-big{
     height: 354px; 
-    object-fit: cover;
 }
 .sites__card-pic-size-small{
     height: 283px; 
-    object-fit: cover;
 }
 .sites__card-link{
     position: absolute;
@@ -705,17 +706,121 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0 108px;
-}
-.tour{
-
+    align-items: center;
+    margin-bottom: 77px;
 }
 .tour__info{
+    padding-left: 47px;
 
 }
-.tour__titile{
-
+.tour__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
 }
 .tour__desc{
-
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+.tour__link{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/arrow-right-ico.svg) no-repeat 95% center;
+    transition: 0.2s all;
+}
+.tour__link:hover, .tour__link:focus{
+    background: url(../img/svg/arrow-right-ico.svg) no-repeat right center;
 }
 /* Tours end */
+
+/* Visits start */
+.visits{
+    margin-bottom: 86px;
+}
+.visits__title{
+    margin-bottom: 54px;
+}
+.visits__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+.visits__card{
+    display: flex;
+    flex-direction: column;
+}
+.visits__card-pic{
+    position: relative;
+    margin-bottom: 45px;
+}
+.visits__card-thumb{
+
+}
+.visits__card-stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left 0;
+    width: 100%;
+    background-color: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+.visits__card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;  
+    margin: 0 auto 0 0;  
+}
+.visits__card-likes{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url(../img/svg/heart-ico.svg) no-repeat right;
+    margin-right: 14px;
+}
+.visits__card-comments{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 23px;
+    background: url(../img/svg/shape-2.svg) no-repeat right;
+}
+.visits__card-likes-value{
+
+}
+.visits__card-comments-value{
+
+}
+.visits__card-desc{
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 31px;
+}
+.visits__card-more{
+    max-width: 118px;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;  
+    background-color: #006DFE;  
+    margin: auto 0 0 0;
+    padding: 12px 19px;
+}
+.visits__card-more:hover, .visits__card-more:active, .visits__card:focus{
+    background: #084fad;
+}
+/* Visits end */
