@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Amazing places in Japan</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-min.css">
 </head>
 <body>
     <!-- Header start -->
@@ -22,16 +22,16 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#!" class="header__link">Articles</a>
+                            <a href="#articles" class="header__link js-scroll">Articles</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Locations</a>
+                            <a href="#locations" class="header__link js-scroll">Locations</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Videos</a>
+                            <a href="#videos" class="header__link js-scroll">Videos</a>
                         </li>
                         <li class="header__item">
-                            <a href="#!" class="header__link">Sign in</a>
+                            <a href="#sign-in" class="header__link js-scroll">Sign in</a>
                         </li>
                     </ul>
                     <div class="header__nav-close">
@@ -53,7 +53,7 @@
     <main>
         <div class="main">
             <!-- Intro start -->
-            <section class="intro">
+            <section class="intro" id="sign-in">
                 <div class="wrapper">
                     <h1 class="intro__title">
                         Discover Amazing places in Japan
@@ -160,7 +160,7 @@
             <!-- Sites end-->
 
             <!-- Tours start-->
-            <div class="tours">
+            <div class="tours" id="articles">
                 <div class="wrapper-full">
                     <div class="tours__tour tour">
                         <div class="tour__pic">
@@ -183,7 +183,7 @@
                             </p>
                             <a href="#!" class="tour__link">VIEW NEIGHBORHOOD</a>
                         </div>
-                        <div class="tour__pic">
+                        <div class="tour__pic tour__pic-mob-first">
                             <img src="./img/tour-2.jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb">
                         </div>
                     </div>
@@ -193,7 +193,7 @@
             <!-- Tours end-->
 
             <!-- Visits start -->
-            <section class="visits">
+            <section class="visits" id="locations">
                 <div class="wrapper-full">
                     <h2 class="section-title visits__title">Today top places to visit</h2>
                     <div class="visits__cards">
@@ -321,12 +321,12 @@
             <!-- Visits end -->
         </div>
         <!-- Videos start -->
-        <div class="videos">
+        <div class="videos" id="videos">
             <div class="videos__wrapper">
                 <div class="video__item"></div>
-
-                <iframe class = "video__element" src="https://www.youtube.com/embed/cS-hFKC_RKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <!--
+                    <iframe class = "video__element" src="https://www.youtube.com/embed/IuTDuvYr7f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                -->
             </div>
         </div>
         <!-- Videos end -->
